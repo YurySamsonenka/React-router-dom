@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const NavWrapper = styled.div`
   margin-left: 10px;
@@ -17,23 +17,9 @@ const NavWrapper = styled.div`
   & > a:hover {
     color: steelblue; /* Цвет ссылки */
   }
-`;
+`
 
-const FlexContainer = styled.div`
-  display: flex;
-  padding: 0 40px 0;
-  justify-content: space-between;
 
-  a {
-    width: 32%;
-		
-		img {
-			width: 100%;
-		}
+export const S={
+    NavWrapper,
   }
-`;
-
-export const S = {
-	NavWrapper,
-	FlexContainer,
-};
