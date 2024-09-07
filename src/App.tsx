@@ -15,7 +15,7 @@ const PATH = {
 	PAGE2: '/puma',
 	PAGE3: '/abibas',
 	PAGE4: '/prices',
-
+	PAGE5: '/protected',
 } as const;
 
 function App() {
@@ -28,22 +28,23 @@ function App() {
 					<S.NavWrapper><NavLink to={PATH.PAGE2}>Puma</NavLink></S.NavWrapper>
 					<S.NavWrapper><NavLink to={PATH.PAGE3}>Abibas</NavLink></S.NavWrapper>
 					<S.NavWrapper><NavLink to={PATH.PAGE4}>Цены для оптовиков</NavLink></S.NavWrapper>
+					<S.NavWrapper><NavLink to={PATH.PAGE5}>ProtectedPage</NavLink></S.NavWrapper>
 
 				</div>
 				<div className={styles.content}>
 					<Outlet />
 					<Routes>
-					    <Route path={'/'} element={<Navigate to={PATH.PAGE1}/>}/>
+					    {/*<Route path={'/'} element={<Navigate to={PATH.PAGE1}/>}/>*/}
 
-					    <Route path={PATH.PAGE1} element={<Adidas/>}/>
-					    <Route path={PATH.PAGE2} element={<Puma/>}/>
-					    <Route path={PATH.PAGE3} element={<Abibas/>}/>
-					    <Route path={PATH.PAGE4} element={<Prices/>}/>
+					    {/*<Route path={PATH.PAGE1} element={<Adidas/>}/>*/}
+					    {/*<Route path={PATH.PAGE2} element={<Puma/>}/>*/}
+					    {/*<Route path={PATH.PAGE3} element={<Abibas/>}/>*/}
+					    {/*<Route path={PATH.PAGE4} element={<Prices/>}/>*/}
 
 					    {/*<Route path={'/adidas/:id'} element={<Model/>}/>*/}
-					    <Route path={'/:model/:id'} element={<Model/>}/>
+					    {/*<Route path={'/:model/:id'} element={<Model/>}/>*/}
 
-					    <Route path={'/*'} element={<Error404/>}/>
+					    {/*<Route path={'/*'} element={<Error404/>}/>*/}
 
 					    {/*<Route path={'/page/error'} element={<Error404/>}/>*/}
 					    {/*<Route path={'/*'} element={<Navigate to={'/page/error'}/>}/>*/}
