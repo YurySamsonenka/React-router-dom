@@ -1,7 +1,7 @@
 export const ProtectedPage = () => {
 	return (
 		<div>
-			Юра
+			Error404
 		</div>
 	);
 };
